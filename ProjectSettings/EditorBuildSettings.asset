@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Buttons.unity
+    guid: 26109210f91473145a40cc1a63e58cf3
+  - enabled: 1
+    path: Assets/Scenes/Toggles.unity
+    guid: 79f245b4c94775740a7434c05f211319
+  - enabled: 1
+    path: Assets/Scenes/Input.unity
+    guid: 7eccba85135b15b449bdc9100d71adfa
+  - enabled: 1
+    path: Assets/Scenes/Drops.unity
+    guid: fd5db1c06a6ae2846b7956366a484753
+  - enabled: 1
+    path: Assets/Scenes/ScrollViem.unity
+    guid: 61f09f3ba77e64747891da248bc939de
   m_configObjects: {}
