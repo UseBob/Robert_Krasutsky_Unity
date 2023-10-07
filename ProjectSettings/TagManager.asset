@@ -3,19 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ball
-  - AmmoStand
-  - GrenadeStand
-  - GrenadePart
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
-  - grenade
+  - 
   - 
   - 
   - 
