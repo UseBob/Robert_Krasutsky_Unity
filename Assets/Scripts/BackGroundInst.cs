@@ -18,12 +18,12 @@ public class BackGroundInst : MonoBehaviour
 
     private void Update()
     {
-        if (player.position.x > spawnedPlatformsForward[spawnedPlatformsForward.Count - 1].end.position.x - 10)
+        if (player.position.x > spawnedPlatformsForward[spawnedPlatformsForward.Count - 1].end.position.x - 15)
         { 
             SpawnPlatformForward();
             Debug.Log(spawnedPlatformsForward.Count);
         }
-        else if (player.position.x < spawnedPlatformsBack[spawnedPlatformsBack.Count - 1].begin.position.x + 10)
+        else if (player.position.x < spawnedPlatformsBack[spawnedPlatformsBack.Count - 1].begin.position.x + 15)
         {
             SpawnPlatformBack();
         }
