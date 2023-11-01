@@ -11,6 +11,7 @@ public class movePlatform : MonoBehaviour
     public GameObject point2;
     private Vector3 startPosition;
     private Vector3 endPosition;
+    private Collider2D collider;
 
     
     private float scaleTime;
@@ -18,7 +19,8 @@ public class movePlatform : MonoBehaviour
 
     private void Start()
     {
-        endPosition=point2.transform.position;
+        collider=GetComponent<Collider2D>();
+        endPosition =point2.transform.position;
         startPosition = transform.position;
     }
 
@@ -42,5 +44,14 @@ public class movePlatform : MonoBehaviour
                 endPosition = point2.transform.position;
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag=="Player" && this.collider.tag!="Platform")
+        {
+            collider.enabled = false;
+            Destroy(gameObject.GetComponent<movePlatform>());   
+        }  
     }
 }
